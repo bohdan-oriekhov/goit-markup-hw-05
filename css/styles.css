@@ -629,10 +629,11 @@ color: #434455;
   /* Modal Form Description Styles */
   .modal-form-description {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
+font-size: 16px;
+line-height: 24px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
     color: var(--navy-blue);
     margin-bottom: 16px;
   }
@@ -713,4 +714,80 @@ color: #434455;
   
   .form-comment::placeholder {
     color: rgba(46, 47, 66, 0.4);
+  }
+
+  /* обгортка поля */
+.form-field-policy {
+    margin-bottom: 24px;                /* ✅ */
+  }
+  
+  /* прихований чекбокс */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  
+  /* label */
+  .policy-label {
+    font-size: 12px;                    /* ✅ */
+    line-height: 1.17;                  /* ✅ */
+    letter-spacing: 0.04em;             /* ✅ */
+    color: #8e8f99;                     /* ✅ */
+    display: inline-flex;               /* центруємо span + текст */
+    align-items: center;
+  }
+  
+  /* квадрат-чекбокс */
+  .policy-box {
+    width: 16px;                        /* ✅ */
+    height: 16px;                       /* ✅ */
+    border: 1px solid rgba(46, 47, 66, 0.4); /* ✅ */
+    border-radius: 2px;                 /* ✅ */
+    display: inline-flex;               /* ✅ */
+    align-items: center;                /* ✅ */
+    justify-content: center;            /* ✅ */
+    fill: transparent;                  /* ✅ */
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1),
+                border 250ms cubic-bezier(0.4,0,0.2,1),
+                fill 250ms cubic-bezier(0.4,0,0.2,1);
+  }
+  
+  /* сама іконка «check» */
+  .policy-icon {
+    transition: fill 250ms cubic-bezier(0.4,0,0.2,1); /* ✅ */
+  }
+  
+  /* стан checked ─ оформлюємо span та іконку */
+  .policy-input:checked + .policy-label .policy-box {
+    background-color: #404bbf;          /* ✅ */
+    border: none;                       /* ✅ */
+    fill: #f4f4fd;                      /* ✅ */
+  }
+  
+  /* посилання «Privacy Policy» */
+  .policy-link {
+    color: #4d5ae5;                     /* ✅ */
+    text-decoration: underline;
+  }
+
+  .form-submit-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto; /* Центрування */
   }
