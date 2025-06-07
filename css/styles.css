@@ -511,8 +511,10 @@ color: #434455;
     border-radius: 4px;
     background-color: transparent;
     color: #fff;
-    font-size: 16px;
-    line-height: 24;
+    line-height: 2;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
   }
 
   .subscribe-input::placeholder {
@@ -523,7 +525,8 @@ color: #434455;
 .subscribe-btn {
     display: flex;
     align-items: center;
-    width: 165px;
+    align-items: center;
+    min-width: 165px;
     gap: 16px;
     padding: 8px 24px;
     height: 40px;
@@ -534,5 +537,17 @@ color: #434455;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #404bbf;
+}
+
+.subscribe-icon {
+    margin-left: 16px;
+    fill: currentColor;
   }
