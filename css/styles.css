@@ -742,6 +742,10 @@ text-align: center;
     align-items: center;
   }
   
+span {
+  display: inline-flex;
+}
+
   .policy-box {
     width: 16px;
     height: 16px;
